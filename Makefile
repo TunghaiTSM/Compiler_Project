@@ -2,6 +2,7 @@ CC := cc
 MY_COMPILER := custom_compiler
 SRC_FOLDER := ./samples
 SOURCES := $(wildcard $(SRC_FOLDER)/*.c)
+TARGET := $(MY_COMPILER)
 
 
 # Setup bison / flex if not installed yet.
@@ -17,11 +18,11 @@ build:
 
 
 # Build the test files in the samples folder
-test: $(SOURCES)
-
-$(SOURCES):
+$(SOURCES): $(TARGET)
 	./$(MY_COMPILER) < $@
 
+# Compile all test files
+test: $(SOURCES)
 
 # Clean up the clutter.
 clean:
