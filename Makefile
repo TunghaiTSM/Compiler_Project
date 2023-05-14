@@ -25,4 +25,4 @@ $(SOURCES):
 
 # Clean up the clutter.
 clean:
-	rm lex.yy.c y.tab.c $(MY_COMPILER)
+	rm -f lex.yy.c y.tab.c $(MY_COMPILER)
