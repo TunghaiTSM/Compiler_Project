@@ -1,6 +1,10 @@
 # Compiler Final Project
 
 ## Resources:
+
+### Gist discussion:
+- https://gist.github.com/codebrainz/2933703
+
 ### Lex, Yacc files:
 - https://www.quut.com/c/ANSI-C-grammar-l-2011.html
 - https://www.quut.com/c/ANSI-C-grammar-y-2011.html
