@@ -19,7 +19,7 @@ build:
 
 # Build the test files in the samples folder
 $(SOURCES): $(TARGET)
-	./$(MY_COMPILER) < $@
+	-./$(MY_COMPILER) $@
 
 # Compile all test files
 test: $(SOURCES)
