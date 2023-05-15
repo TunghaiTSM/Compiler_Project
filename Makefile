@@ -10,7 +10,7 @@ setup:
 	# Ubuntu
 	#sudo apt install -y bison flex
 	# Arch Linux
-	sudo pacman -S bison flex libcxx clang llvm
+	sudo pacman -S bison flex libc++ clang llvm
 
 
 # Build the compiler.
