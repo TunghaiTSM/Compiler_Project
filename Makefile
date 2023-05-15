@@ -7,7 +7,10 @@ TARGET := $(MY_COMPILER)
 
 # Setup bison / flex if not installed yet.
 setup:
-	sudo apt install -y bison flex
+	# Ubuntu
+	#sudo apt install -y bison flex
+	# Arch Linux
+	sudo pacman -S bison flex libc++ clang llvm
 
 
 # Build the compiler.
@@ -24,6 +27,11 @@ $(SOURCES): $(TARGET)
 # Compile all test files
 test: $(SOURCES)
 
+# Generate Assembly
+assembly:
+	clang -S -emit-llvm $(SRC_FOLDER)/sample3.c
+	llc sample3.ll
+
 # Clean up the clutter.
 clean:
-	rm -f lex.yy.c y.tab.c y.tab.h $(MY_COMPILER)
+	rm -f lex.yy.c y.tab.c y.tab.h *.ll *.s $(MY_COMPILER)
