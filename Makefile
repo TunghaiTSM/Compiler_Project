@@ -7,7 +7,10 @@ TARGET := $(MY_COMPILER)
 
 # Setup bison / flex if not installed yet.
 setup:
-	sudo apt install -y bison flex
+	# Ubuntu
+	#sudo apt install -y bison flex
+	# Arch Linux
+	sudo pacman -S bison flex libcxx clang
 
 
 # Build the compiler.
