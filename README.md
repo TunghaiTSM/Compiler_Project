@@ -22,6 +22,18 @@
 
 ### 3. `make assembly`
 - 使用LLVM裡的`clang`及`llc`，生成組合語言。
+- 我們使用`sample3.c`作為我們測試的對象:
+```c
+#include <stdio.h>
+int main(void)
+{
+   int x=1;
+   int y=2;
+   int z=3;
+   x=y+z;
+   printf ("The value of x is: %d\n", x);
+}
+```
 <img width="1027" alt="image" src="https://github.com/TunghaiTSM/Compiler_Project/assets/37164678/7030003f-ea2c-4296-bcc7-9e7bc5deb41b">
 <img width="1308" alt="image" src="https://github.com/TunghaiTSM/Compiler_Project/assets/37164678/3338260e-882b-48e5-88de-9b67942e9dee">
 
