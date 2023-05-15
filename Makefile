@@ -27,10 +27,13 @@ $(SOURCES): $(TARGET)
 # Compile all test files
 test: $(SOURCES)
 
-# Generate Assembly
+# Generate Assembly and Link it using ld
 assembly:
 	clang -S -emit-llvm $(SRC_FOLDER)/sample3.c
 	llc sample3.ll
+	as sample3.s -o sample3.o
+	ld sample3.o -o sample3
+	./sample3
 
 # Clean up the clutter.
 clean:

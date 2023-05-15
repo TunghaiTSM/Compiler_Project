@@ -4,3 +4,5 @@ y.tab.h
 custom_compiler
 *.ll
 *.s
+*.o
+sample*
