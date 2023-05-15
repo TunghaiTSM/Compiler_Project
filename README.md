@@ -15,7 +15,7 @@
 ### 3. `make assembly`
 - 使用LLVM裡的`clang`及`llc`，生成組合語言。
 
-### 4. 收工。
+### 4. 收工，結束這回合。
 
 ---
 ## Resources:
