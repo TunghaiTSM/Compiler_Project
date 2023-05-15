@@ -44,4 +44,4 @@ assembly:
 
 # Clean up the clutter.
 clean:
-	rm -f lex.yy.c y.tab.c y.tab.h *.ll *.s *.o $(MY_COMPILER)
+	rm -f lex.yy.c y.tab.c y.tab.h *.ll *.s *.o sample3 $(MY_COMPILER)
