@@ -3,6 +3,8 @@ MY_COMPILER := custom_compiler
 SRC_FOLDER := ./samples
 SOURCES := $(wildcard $(SRC_FOLDER)/*.c)
 TARGET := $(MY_COMPILER)
+# -lc = LIBC = /usr/lib/libc.so
+LD_DYNAMIC_OPTIONS := -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o /usr/lib/crti.o sample3.o -lc /usr/lib/crtn.o
 
 
 # Setup bison / flex if not installed yet.
@@ -38,7 +40,7 @@ assembly:
 	# 使用as將組合語言轉換為目的檔
 	as sample3.s -o sample3.o
 	# 使用ld連結函式庫並設定程式進入點，產生執行檔。
-	ld sample3.o -e main -o sample3
+	ld $(LD_DYNAMIC_OPTIONS) -o sample3
 	# 執行
 	./sample3
 
