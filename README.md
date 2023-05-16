@@ -36,6 +36,7 @@ int main(void)
 ```
 <img width="1027" alt="image" src="https://github.com/TunghaiTSM/Compiler_Project/assets/37164678/7030003f-ea2c-4296-bcc7-9e7bc5deb41b">
 <img width="1308" alt="image" src="https://github.com/TunghaiTSM/Compiler_Project/assets/37164678/3338260e-882b-48e5-88de-9b67942e9dee">
+
 - (請幫我補充至簡報內)一開始的時候我們並不知道如何使用ld這個指令，因此編譯出來的程式都會一直出現Segmentation Fault.但是當看了老師提供的教學之後，裡面提到的StackOverflow上的問答讓我們得以跟據其原理及我們系統的需求調整參數(另外還發現了-lc = /usr/lib/libc.so)
 
 ### 4. 收工，結束這回合。
