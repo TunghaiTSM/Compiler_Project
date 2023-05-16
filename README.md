@@ -5,9 +5,9 @@
 ## System: Arch Linux
 
 ## Instructions:
-### 1. `make setup`
+### 1. `make setup-arch` (也有`make setup-ubuntu`)
 - 安裝需要的軟體。
-<img width="501" alt="image" src="https://github.com/TunghaiTSM/Compiler_Project/assets/37164678/9e948279-5aa4-45a0-a094-822c3b4490cc">
+<img width="819" alt="image" src="https://github.com/pedestrianlove/Compiler_Project/assets/37164678/1faf40c2-514c-408a-8031-e7a7a61af23c">
 
 
 ### 2. `make build`

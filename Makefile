@@ -8,11 +8,12 @@ LD_DYNAMIC_OPTIONS := -dynamic-linker /lib/ld-linux-x86-64.so.2 /usr/lib/crt1.o 
 
 
 # Setup bison / flex if not installed yet.
-setup:
+setup-ubuntu:
 	# Ubuntu
-	#sudo apt install -y bison flex
-	# Arch Linux
-	sudo pacman -S bison flex libc++ clang llvm
+	sudo apt install -y bison flex clang llvm
+setup-arch:
+	# Arch Linux (comes with libc++ by default)
+	sudo pacman -S bison flex clang llvm
 
 
 # Build the compiler.
