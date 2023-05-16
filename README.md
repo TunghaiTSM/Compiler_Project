@@ -40,6 +40,11 @@ int main(void)
 
 - (請幫我補充至簡報內)一開始的時候我們並不知道如何使用ld這個指令，因此編譯出來的程式都會一直出現Segmentation Fault.但是當看了老師提供的教學之後，裡面提到的StackOverflow上的問答讓我們得以跟據其原理及我們系統的需求調整參數(另外還發現了-lc = /usr/lib/libc.so)
 
+- Makefile
+![image](https://github.com/pedestrianlove/Compiler_Project/assets/37164678/c6f569b6-8be1-4780-a031-e504f80aca91)
+![image](https://github.com/pedestrianlove/Compiler_Project/assets/37164678/91405c63-621b-4a88-98b0-350d56651a38)
+
+
 ### 4. 收工，結束這回合。
 
 ---
