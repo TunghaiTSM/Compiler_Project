@@ -18,6 +18,7 @@
 ### 3. `make test`
 - 使用`samples/`資料夾下所列的範例程式進行我們產生的compiler測試。
 <img width="659" alt="image" src="https://github.com/TunghaiTSM/Compiler_Project/assets/37164678/99987aa3-0810-4e34-a41e-92acb99df7cb">
+
 - `sample3.c`會有錯誤是因為他加了標頭檔，無法被我們的編譯器識別。
 
 ### 3. `make assembly`
