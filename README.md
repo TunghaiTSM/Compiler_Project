@@ -1,5 +1,5 @@
 # Compiler Final Project
-## 簡報: [TunghaiTSM/compiler-project-report](https://github.com/TunghaiTSM/compiler-project-report)
+## $\LaTeX$簡報: [TunghaiTSM/compiler-project-report](https://github.com/TunghaiTSM/compiler-project-report)
 
 ---
 ## System: Arch Linux
